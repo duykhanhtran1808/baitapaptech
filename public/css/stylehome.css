@@ -1,0 +1,127 @@
+body {
+    font-size: 13px;
+    line-height: 1.4em;
+    font-family: 'Open Sans',sans-serif;
+    color: #333;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.section {
+    float: left;
+    width: 100%;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/* header  */
+header {
+    background-color: white;
+    padding: 5px 0;
+}
+.header-logo {
+    text-align: center;
+}
+.header-left-item {
+    text-align: center;
+    padding: 19px;
+    text-decoration: none;
+    color: #333;
+}
+.header-left a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.page-active {
+    background: #36c5f4;
+    border-radius: 5px;
+}
+.header-left {
+    margin: auto;
+}
+.header-left img{
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+}
+.header-contact-detail {
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: middle;
+    
+}
+.header-contact-detail p {
+    margin-bottom: 0;
+}
+.header-contact img {
+    vertical-align: middle;
+}
+.header-contact {
+    background: #36c5f4;
+    border-radius: 5px;
+    width: 200px;
+    float: right;
+    margin-top: 12px;
+}
+.header-user {
+    margin-top: 12px;
+}
+/* end of header  */
+
+/* search tab  */
+.search-tab {
+    height: 400px;
+    background-image: url(bg-banner-home.png);
+    background-size: 100% 100%;
+}
+.search-input {
+    height: 300px;
+    width: auto;
+    padding: 10px;
+    background-color: #1b7dd8;
+    margin: 20px 0;
+    border-radius: 5px;
+    float: left;
+}
+.search-input p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+
+.search-input > .form > input{
+    margin: 15px auto;
+}
+.search-input .btn {
+    height: 53px;
+    width: 100%;
+    font-size: 18px;
+    background: #ed4079;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.search-promo {
+    height: 300px;
+    width: 99%;
+    background-color: #1b7dd8;
+    margin: 20px 0;
+    border-radius: 5px;
+    float: right;
+    overflow: hidden;
+}
+.search-promo img {
+    width:100%;
+    height:100%;
+}

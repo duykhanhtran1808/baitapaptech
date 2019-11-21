@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/stylehome.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body>
-<p>abc</p>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 header-logo">
+                    <a href="/"><img src="https://staticproxy.mytourcdn.com/160x58,q90/themes/images/logo-mytour.png" alt="logo"></a>
+                  </div>
+                <div class="col-xl-6 float-xl-left header-left">
+                    <a class="header-left-item" href="#">
+                        <img src="\img\open-iconic-master\webp\tag-4x.webp" alt="dollar">
+                        Ưu Đãi</a>
+                    <a class="header-left-item page-active" href="/">
+                        <img src="\img\open-iconic-master\webp\calculator-4x.webp" alt="khachsan">
+                        Khách Sạn</a>
+                    <a class="header-left-item" href="#">
+                            <img src="\img\open-iconic-master\webp\book-4x.webp" alt="book">
+                        Cẩm Nang</a>
+                </div>
+                <div class="col-xl-3 float-xl-right header-right">
+                    <div class="header-contact">
+                        <img src="\img\open-iconic-master\webp\phone-4x.webp" alt="phone">
+                        <div class="header-contact-detail">
+                            <p><strong>Hà Nội</strong>: 024 7109 9999</p>
+                            <p><strong>TP.HCM</strong>: 028 7109 9998</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-1 dropdown header-user">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          User
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Quản lý đơn phòng</a>
+                          <a class="dropdown-item" href="#">Quảng lý tài khoản</a>
+                          <a class="dropdown-item" href="#">Đăng xuất</a>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header  -->
+    <section class="search-tab">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-4 search-input">
+                        <p>Tìm Khách Sạn</p>
+                        <form class="form">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Date" aria-label="Search">
+                                <input class="form-control mr-sm-2" type="search" placeholder="So nguoi" aria-label="Search">
+                                <button class="btn" type="submit">Tìm Kiếm</button>
+                              </form>
+
+                </div>
+                <div class="col-xl-8">
+                    <div class="search-promo">
+                        <img src="https://staticproxy.mytourcdn.com/0x0/resources/pictures/banners/advertising1571997718.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of search  -->
+    
+
+
 </body>
 
 </html>
