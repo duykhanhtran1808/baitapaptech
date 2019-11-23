@@ -2,65 +2,76 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/stylehome.css" type="text/css">
+    <link href="/img/fontawesome-free-5.11.2-web/css/fontawesome.css" rel="stylesheet">
+  <link href="/img/fontawesome-free-5.11.2-web/css/brands.css" rel="stylesheet">
+  <link href="/img/fontawesome-free-5.11.2-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Home</title>
+<link rel="stylesheet" href="/css/stylehome.css" type="text/css">    
+<title>Home</title>
 </head>
+
+
 <body>
+
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-xl-2 header-logo">
-                    <a href="/"><img src="https://staticproxy.mytourcdn.com/160x58,q90/themes/images/logo-mytour.png" alt="logo"></a>
-                  </div>
-                <div class="col-xl-6 float-xl-left header-left">
-                    <a class="header-left-item" href="#">
-                        <img src="\img\open-iconic-master\webp\tag-4x.webp" alt="dollar">
-                        Ưu Đãi</a>
-                    <a class="header-left-item page-active" href="/">
-                        <img src="\img\open-iconic-master\webp\calculator-4x.webp" alt="khachsan">
-                        Khách Sạn</a>
-                    <a class="header-left-item" href="#">
-                            <img src="\img\open-iconic-master\webp\book-4x.webp" alt="book">
-                        Cẩm Nang</a>
-                </div>
-                <div class="col-xl-3 float-xl-right header-right">
-                    <div class="header-contact">
-                        <img src="\img\open-iconic-master\webp\phone-4x.webp" alt="phone">
-                        <div class="header-contact-detail">
-                            <p><strong>Hà Nội</strong>: 024 7109 9999</p>
-                            <p><strong>TP.HCM</strong>: 028 7109 9998</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-1 dropdown header-user">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          User
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                            <a class="navbar-brand" href="/">
+                                <img src="https://staticproxy.mytourcdn.com/160x58,q90/themes/images/logo-mytour.png" alt="logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                      
+                                      <li class="nav-item ml-2 mr-2 ">
+                                        <i class="fas fa-percent d-inline "></i>
+                                        <a class="nav-link d-inline" href="#">Ưu Đãi</a>
+                                      </li>
+
+                                      <li class="nav-item active ml-2 mr-2">
+                                            <i class="fas fa-hotel d-inline "></i>
+                                            <a class="nav-link d-inline" href="#">Khách Sạn <span class="sr-only">(current)</span></a>
+                                          </li>
+
+                                    <li class="nav-item ml-2 mr-2 ">
+                                            <i class="fas fa-book d-inline "></i>
+                                            <a class="nav-link d-inline" href="#">Cẩm Nang</a>
+                                         </li>
+                                    </ul>
+                                  </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <button type="button" class="btn ml-auto">
+                                <i class="fas fa-user"></i>
+                                Login
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Quản lý đơn phòng</a>
-                          <a class="dropdown-item" href="#">Quảng lý tài khoản</a>
-                          <a class="dropdown-item" href="#">Đăng xuất</a>
-                        </div>
-                      </div>
-            </div>
+                </div>
+                    </div>
+            </nav>
         </div>
     </header>
+
+
     <!-- end of header  -->
     <section class="search-tab">
         <div class="container">
             <div class="row ">
-                <div class="col-xl-4 search-input">
-                        <p>Tìm Khách Sạn</p>
-                        <form class="form">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Tên Địa Điểm" name="location">
-                                <input class="form-control mr-sm-2" type="date" placeholder="Thời gian" name="date">
-                                <input class="form-control mr-sm-2" type="number" placeholder="Số Người" name="number">
-                                <button class="btn" type="submit">Tìm Kiếm</button>
-                              </form>
+                <div class="col-xl-4">
+                    <div class="search-input">
+                            <p>Tìm Khách Sạn</p>
+                            <form class="form">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Tên Địa Điểm" name="location" required>
+                                    <input class="form-control mr-sm-2" type="date" placeholder="Thời gian" name="date" required>
+                                    <input class="form-control mr-sm-2" type="number" placeholder="Số Người" name="number" required>
+                                    <button class="btn" type="submit" onclick="return confirm('Chắc chưa?')">Tìm Kiếm</button>
+                                  </form>
+                    </div>
+                        
 
                 </div>
                 <div class="col-xl-8">
@@ -196,8 +207,159 @@
         </div>
     </section>
     <!-- end of menu  -->
+    <!-- promo  -->
+    <section class="promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="promo-left">
+                        <a href="#">
+                            <img src="https://staticproxy.mytourcdn.com/0x0/resources/pictures/banners/advertising1573182965.jpg" alt="leftpromo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="promo-right">
+                            <img class="imglogo" src="https://staticproxy.mytourcdn.com/0x0,q90/themes/images/logo-why-mytour.png" alt="">
+                            <img class="img-responsive" src="https://staticproxy.mytourcdn.com/0x0,q90/themes/images/bg-why-mytour.jpg" alt="">
+                            <div class="nav">
+                                <ul>
+                                    <li>
+                                        <strong>Giá tốt hơn</strong> so với đặt
+                                        phòng trực tiếp tại khách sạn
+                                    </li>
+                                    <li>
+    
+                                        <strong>giá tốt nhất                                        
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        Đảm bảo
+                                        <strong>hoàn tiền
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        Nhân viên chăm sóc, tư vấn nhiều kinh
+                                        nghiệm
+                                    </li>
+                                    <li>
+                                        Hơn <strong>5000</strong> khách sạn tại
+                                        Việt Nam với đánh giá thực
+                                    </li>
+                                    <li>
+                                        Nhiều chương trình khuyến mãi và tích lũy
+                                        điểm
+                                    </li>
+                                    <li>
+                                        Thanh toán <strong>dễ dàng, đa
+                                            dạng</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
 
 
+        </div>
+    </section>
+    <!-- end of promo  -->
+    <!-- footer  -->
+<footer>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-12 logo">
+                    <a href="#">
+                        <img src="https://staticproxy.mytourcdn.com/160x58,q90/themes/images/logo-mytour.png" alt="mytour.vn" title="mytour.vn">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="footer-title">
+                        Công ty TNHH Du Lịch T909E
+                    </h5>
+                    <div class="contact">
+                        <ul class="list-unstyled mg-bt-30">
+                            <li>Hà Nội: 099 999 999 </li>
+                            <li>Hồ Chí Minh: 099 999 999</li>
+                            <li>Email: admin@mdulicht909e.vn</li>
+                            <li>Văn phòng Hà Nội: Tòa nhà Detech, FPT</li>
+                        </ul>
+                        <ul class="list-unstyled mg-bt-30">
+                            <li>Số ĐKKD: 0999999 cấp ngày 30/08/2019</li>
+                            <li>Nơi cấp: Sở kế hoạch và đầu tư thành phố Hà Nội</li>
+                            <li>Lĩnh vực kinh doanh: Đại lý du lịch</li>
+                            <li>Địa chỉ tên miền: Dulicht909e.heroku.com</li>
+                        </ul>
+                        <ul class="list-unstyled mg-bt-30">
+                            <li>Tài khoản ngân hàng số: 00999999999</li>
+                            <li>Ngân hàng thương mại cổ phần Ngoại thương Việt Nam (Vietcombank) - Sở giao dịch</li>
+                            <li>Chủ tài khoản: Công ty TNHH Du Lịch T909E</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 rule">
+                    <div class="row mg-bt-20">
+                        <h5 class="footer-title text-uppercase">
+                            QUY ĐỊNH DÀNH CHO WEBSITE TMĐT BÁN HÀNG –
+                            <br>
+                            DỊCH VỤ ĐẶT PHÒNG
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Chính sách và quy định chung</a></li>
+                            <li><a href="#">Quy định về thanh toán</a></li>
+                            <li><a href="#">Quy định về xác nhận thông tin đặt phòng</a></li>
+                            <li><a href="#">Chính sách về hủy đặt phòng và hoàn trả tiền</a></li>
+                            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                        </ul>
+    
+                        <div class="row mg-t-10">
+                            <a class="logo" href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=38515" target="_blank" title="Công ty TNHH Du Lịch T909E">
+                                <img class="img-responsive" src="https://staticproxy.mytourcdn.com/0x0,q90/themes/images/logo-dathongbao-bocongthuong-w165.png" alt="Đã thông báo Bộ Công Thương">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <h5 class="footer-title text-uppercase">
+                            QUY ĐỊNH CHO SÀN GDTMĐT - DỊCH VỤ ĐẶT PHÒNG VÀ DỊCH VỤ ĐẶT TOUR DU LỊCH
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Quy chế hoạt động</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Quy trình giải quyết tranh chấp, khiếu nại</a></li>
+                        </ul>
+    
+                        <div class="row mg-t-10">
+                            <a class="logo" href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=358" target="_blank" title="Công ty TNHH Du Lịch T909E">
+                                <img class="img-responsive" src="https://staticproxy.mytourcdn.com/0x0,q90/themes/images/logo-congthuong-w165.png" alt="Đã đăng ký Bộ Công Thương">
+                            </a>
+                        </div>
+                    </div>   
+                </div>
+                    <div class="col-sm-4 ">
+                        <div > 
+                            <h5>
+                                Tải mobile app
+                            </h5>
+                            <ul class="mobile-app">
+                                <li>
+                                    <a target="_blank" href="#">
+                                        <img src="https://staticproxy.mytourcdn.com/0x0,q90/themes/images/btn-app-apple.png" alt="app store">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="#" >
+                                        <img src="https://staticproxy.mytourcdn.com/0x0,q90/themes/images/btn-app-android.png" alt="google play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
 </body>
 
 </html>
